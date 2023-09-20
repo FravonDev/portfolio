@@ -29,8 +29,20 @@
     font-weight: var(--font-bold);
     color: var(--title-color);
     margin-bottom: 1rem;
+
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    background: url(../../assets/back-black.png);
+    -webkit-background-clip: text;
+    animation: back 60s linear infinite;
 }
 
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
 
 .home_subtitle {
     font-size: var(--h2-font-size);
