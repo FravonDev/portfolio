@@ -1,36 +1,36 @@
-import Work1 from "../../assets/work1.png";
-import Work2 from "../../assets/work2.png";
-import Work3 from "../../assets/work3.png";
-import Work4 from "../../assets/work4.png";
+import Project1 from "../../assets/project1.png";
+import Project2 from "../../assets/project2.png";
+import Project3 from "../../assets/project3.png";
+import Project4 from "../../assets/project4.png";
 
 export const projectsData = [
   {
     id: 1,
-    image: Work1,
-    title: "SocialMedia",
+    image: Project1,
+    title: "Social Media",
     category: "websites",
     url: "https://github.com/FravonDev/social-media/",
   },
   {
     id: 2,
-    image: Work2,
-    title: "Coming soon",
-    category: "websites",
-    url: "https://github.com/FravonDev/social-media/",
+    image: Project2,
+    title: "FravonLinks",
+    category: "Api",
+    url: "#",
   },
   {
     id: 3,
-    image: Work3,
-    title: "Coming soon",
+    image: Project3,
+    title: "Controle de estoque",
     category: "websites",
     url: "https://github.com/FravonDev/",
   },
   {
     id: 4,
-    image: Work4,
+    image: Project4,
     title: "Coming soon",
     category: "websites",
-    url: "https://github.com/FravonDev/",
+    url: "https://github.com/FravonDev/frontend-controle-de-estoque",
   },
 ];
 
@@ -40,10 +40,10 @@ export const projectsNav = [
   },
 
   {
-    name: "websites",
+    name: "website",
   },
 
   {
-    name: "api",
+    name: "Api",
   },
 ];
