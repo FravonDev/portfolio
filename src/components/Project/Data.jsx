@@ -15,7 +15,7 @@ export const projectsData = [
     id: 2,
     image: Project2,
     title: "FravonLinks",
-    category: "Api",
+    category: "Websites",
     url: "#",
   },
   {
@@ -40,10 +40,10 @@ export const projectsNav = [
   },
 
   {
-    name: "website",
+    name: "websites",
   },
 
   {
-    name: "Api",
+    name: "Apis",
   },
 ];
