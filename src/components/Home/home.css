@@ -27,6 +27,9 @@
 .home__title {
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-0-25);
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
 }
 
 .home__hand {
@@ -154,9 +157,9 @@
         margin-left: 7.5rem;
     }
 }
-  
-  /*medium devices */
-  @media screen and (max-width: 768px) {
+
+/*medium devices */
+@media screen and (max-width: 768px) {
 
     .home__content {
         grid-template-columns: 0.5fr 3fr;
@@ -182,10 +185,10 @@
         display: none;
     }
 
-  }
-  
-  /*small devices */
-  @media screen and (max-width: 350px) {
+}
+
+/*small devices */
+@media screen and (max-width: 350px) {
     .home__img {
         width: 180px;
         height: 180px;
@@ -195,5 +198,4 @@
         width: 22px;
         height: 22px;
     }
-  }
-  
+}

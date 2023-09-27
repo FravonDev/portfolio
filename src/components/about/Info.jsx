@@ -21,7 +21,7 @@ const Info = () => {
         <i class="bx bx-desktop about__icon"></i>
 
         <h3 className="about__title">Study Time</h3>
-        <span className="about__subtitle">Full time</span>
+        <span className="about__subtitle">1+ Year</span>
       </div>
     </div>
   );
