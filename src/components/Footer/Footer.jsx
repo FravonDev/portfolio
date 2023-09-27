@@ -55,7 +55,15 @@ function Footer() {
         </div>
 
         <span className="footer__copy">
-          &copy; 2023 Flávio Adriano. All right reserved
+          &copy; 2023 Flávio Adriano. base template from{" "}
+          <a
+            href="https://www.youtube.com/watch?v=3aCoZudPEKE&list=PLrKudo5h_b8DNVrsMdvR0G-ckA9o2m_13&index=7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Cryptical Coder
+          </a>
+          . all rights reserved.
         </span>
       </div>
     </footer>
