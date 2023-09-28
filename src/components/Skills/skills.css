@@ -10,7 +10,7 @@
 
 .skills__content {
     background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
 }
@@ -21,7 +21,7 @@
     font-weight: var(--font-medium);
     text-align: center;
     margin-bottom: var(--mb-1-5);
-    color: #000;
+    color: var(--text-color);
 }
 
 .skills__box {
@@ -47,14 +47,14 @@
 
 .skills .bx-badge-check {
     font-size: 1rem;
-    color: #000;
+    color: var(--text-color);
 }
 
 .skills__name {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    line-weight: 18px;
-    color: #000;
+    line-height: 18px;
+    color: var(--text-color);
 }
 
 .skills__level {
@@ -63,7 +63,6 @@
 }
 
 /* BREAKPOINTS */
-/* UNTUK DEVICE YANG MEMILIKI LAYAR BESAR */
 @media screen and (max-width: 992px) {
     .skills__container {
         grid-template-columns: max-content;
@@ -71,7 +70,6 @@
     }
 }
 
-/* UNTUK DEVICE YANG MEMILIKI LAYAR MEDIUM */
 @media screen and (max-width: 576px) {
     .skills__container {
         grid-template-columns: 1fr;
@@ -82,7 +80,6 @@
     }
 }
 
-/* UNTUK DEVICE YANG MEMILIKI LAYAR KECIL */
 @media screen and (max-width: 350px) {
     .skills__box {
         column-gap: 0.75rem;
