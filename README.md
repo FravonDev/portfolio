@@ -1,9 +1,8 @@
 # React + Vite Personal Portfolio
 
-Portfolio website, with section of experience, about, projects, qualification and contact
-built with react and vite, from a template by [CrypticalCoder](https://www.youtube.com/c/CrypticalCoder)
+Portfolio website, with the sections of experience , about, projects, qualification and contact
 
-### [Visit portfolio website](https://fravondev.vercel.app)
+### [Visit my portfolio website](https://fravondev.vercel.app)
 
 ### Features
 
@@ -42,6 +41,10 @@ Currently, two official plugins are available:
 ```
 
 ```
+
+### credits
+
+built with react and vite, from a template by [CrypticalCoder](https://www.youtube.com/c/CrypticalCoder)
 
 ## Stay Connected
 
