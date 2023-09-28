@@ -16,7 +16,6 @@
     /*Font and typography*/
     --body-font: "Poppins", sans-serif;
 
-
     --big-font-size: 3.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
@@ -49,15 +48,14 @@
 }
 
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --title-color: rgb(204, 204, 204);
-        --title-color-dark: #fff;
-        --text-color: rgb(168, 168, 168);
-        --body-color: #0a0808;
-        --container-color: #202020;
-        --border-color: rgba(255, 255, 255, .07);
-    }
+
+.dark-theme {
+    --title-color: rgb(204, 204, 204);
+    --title-color-dark: #fff;
+    --text-color: rgb(168, 168, 168);
+    --body-color: #0a0808;
+    --container-color: #202020;
+    --border-color: rgba(255, 255, 255, .07);
 }
 
 /* Responsive */

@@ -1,7 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.css";
+import Moon from "../../assets/moon.svg";
+import Sun from "../../assets/sun.svg";
 
 const Header = () => {
+  useEffect(() => {
+    const htmlElement = document.body;
+    const theme = localStorage.getItem("theme");
+
+    if (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      // if don't have theme setted use the system theme
+
+      htmlElement.classList.add("dark-theme");
+      themeIconRef.current.src = Sun;
+    } else if (theme === "dark") {
+      htmlElement.classList.add("dark-theme");
+      themeIconRef.current.src = Sun;
+    } else {
+      htmlElement.classList.remove("dark-theme");
+      themeIconRef.current.src = Moon;
+    }
+  }, []);
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
 
@@ -10,6 +29,25 @@ const Header = () => {
   });
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
+  const themeIconRef = React.createRef();
+
+  function toggleTheme() {
+    // class for animate button
+    themeIconRef.current.classList.add("shake");
+    setTimeout(() => {
+      themeIconRef.current.classList.remove("shake");
+    }, 500);
+
+    const htmlElement = document.body;
+    htmlElement.classList.toggle("dark-theme");
+    if (htmlElement.classList.contains("dark-theme")) {
+      localStorage.setItem("theme", "dark");
+      themeIconRef.current.src = Sun;
+    } else {
+      localStorage.setItem("theme", "light");
+      themeIconRef.current.src = Moon;
+    }
+  }
 
   return (
     <header className="header">
@@ -109,6 +147,16 @@ const Header = () => {
         <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
           <i class="uil uil-apps"></i>
         </div>
+
+        <button
+          className="button__theme"
+          id="theme-button"
+          onClick={() => {
+            toggleTheme();
+          }}
+        >
+          <img src={Moon} alt="theme icon" ref={themeIconRef} />
+        </button>
       </nav>
     </header>
   );
