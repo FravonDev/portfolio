@@ -104,7 +104,6 @@
     }
 
     .nav .button__theme {
-        margin-left: 1rem;
         grid-column: 2/3;
         grid-row: 1/2;
     }
@@ -142,16 +141,19 @@
         color: var(--title-color-dark);
     }
 
-    .nav__toggle {
-        font-size: 1.1rem;
-        cursor: pointer;
-    }
 
     .nav__icon,
     .nav__close,
     .nav__toggle {
         display: block;
     }
+
+    .nav__toggle {
+        font-size: 1.1rem;
+        cursor: pointer;
+        text-align: end;
+    }
+
 }
 
 /*small devices */
