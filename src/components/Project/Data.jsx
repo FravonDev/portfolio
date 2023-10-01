@@ -9,28 +9,29 @@ export const projectsData = [
     image: Project1,
     title: "Social Media",
     category: "websites",
-    url: "https://github.com/FravonDev/social-media/",
+    github_url: "https://github.com/FravonDev/social-media/",
   },
   {
     id: 2,
     image: Project2,
     title: "FravonLinks",
     category: "Websites",
-    url: "#",
+    github_url: "#",
   },
   {
     id: 3,
     image: Project3,
     title: "Controle de estoque",
     category: "websites",
-    url: "https://github.com/FravonDev/",
+    url: "https://controle-de-estoque-blush.vercel.app/",
+    github_url: "https://github.com/FravonDev/controle-de-estoque",
   },
   {
     id: 4,
     image: Project4,
     title: "Coming soon",
     category: "websites",
-    url: "https://github.com/FravonDev/frontend-controle-de-estoque",
+    github_url: "https://github.com/FravonDev/",
   },
 ];
 
