@@ -55,7 +55,7 @@
 
 .project__button {
     color: var(--text-color);
-    font-size: var(--small-font-size);
+    font-size: var(--font-medium);
     display: flex;
     align-items: center;
     text-align: center;
@@ -64,14 +64,16 @@
 }
 
 .project__button-icon {
-    font-size: 1.25rem;
+    font-size: var(--normal-font-size);
     display: flex;
     align-items: center;
     vertical-align: bottom;
+
+
 }
 
 .project__button i {
-    font-size: 1rem;
+    font-size: var(--small-font-size);
     vertical-align: bottom;
 }
 
