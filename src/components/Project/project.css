@@ -56,25 +56,23 @@
 .project__button {
     color: var(--text-color);
     font-size: var(--font-medium);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
     column-gap: 0.4rem;
+    font-weight: var(--font-semi-bold);
+
 }
 
 .project__button-icon {
     font-size: var(--normal-font-size);
-    display: flex;
-    align-items: center;
-    vertical-align: bottom;
-
 
 }
 
 .project__button i {
     font-size: var(--small-font-size);
-    vertical-align: bottom;
+}
+
+.project__button i::before {
+    font-weight: var(--font-semi-bold);
+
 }
 
 
